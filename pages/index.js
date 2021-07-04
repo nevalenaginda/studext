@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Navbar, Stories, Chart } from "../src/component/modules";
 import { RankCard, CourseCard } from "../src/component/base";
 import HorizontalScroll from "react-scroll-horizontal";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -43,7 +44,7 @@ export default function Home() {
                 </svg>
                 <span className="ms-1">Unduh.CSV</span>
               </button>
-              <img src="/throphy.png" alt="trophy" />
+              <img src={require("../src/images/Group.svg")} alt="trophy" />
               <div className="ranking mt-3">
                 <RankCard
                   no="1"
