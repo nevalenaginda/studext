@@ -1,5 +1,7 @@
 import Head from "next/head";
 import { Navbar, Stories, Chart } from "../src/component/modules";
+import { RankCard, CourseCard } from "../src/component/base";
+import HorizontalScroll from "react-scroll-horizontal";
 
 export default function Home() {
   return (
@@ -43,25 +45,70 @@ export default function Home() {
               </button>
               <img src="/throphy.png" alt="trophy" />
               <div className="ranking mt-3">
-                <div className="container-rank">
-                  <div className="position">1</div>
-                  <div className="avatar">
-                    <img alt="avatar" />
-                  </div>
-                  <div>
-                    <p>Nevalen Aginda Prasetyo</p>
-                  </div>
-                  <div className="point">
-                    <div>40</div>
-                    <div>0</div>
-                    <div>0</div>
-                  </div>
-                  <div className="score"></div>
-                </div>
+                <RankCard
+                  no="1"
+                  avatar="/ranking/Ellipse 73-1.png"
+                  className="rank1"
+                  name="Nevalen Aginda Prasetyo"
+                />
+                <RankCard
+                  no="2"
+                  avatar="/ranking/Ellipse 73-2.png"
+                  className="rank2"
+                  name="Tatiana Franci"
+                />
+                <RankCard
+                  no="3"
+                  avatar="/ranking/Ellipse 73-3.png"
+                  className="rank3"
+                  name="Haylie Press"
+                />
+                <RankCard
+                  no="4"
+                  avatar="/ranking/Ellipse 73-4.png"
+                  className="rank4"
+                  name="Jordy Siphosa"
+                />
+                <RankCard
+                  no="5"
+                  avatar="/ranking/Ellipse 73.png"
+                  className="rank4"
+                  name="Ruben Rayn"
+                />
+                <RankCard
+                  no="6"
+                  avatar="/ranking/Ellipse 73.png"
+                  className="rank4"
+                  name="Ruben Zayn"
+                />
+                <RankCard
+                  no="7"
+                  avatar="/ranking/Ellipse 73.png"
+                  className="rank4"
+                  name="Ruben Zayn"
+                />
               </div>
             </div>
           </div>
-          <div className="col-12"></div>
+          <div className="col-12">
+            <div className="course w-100 my-4">
+              <h3>Course Preview</h3>
+              <HorizontalScroll className="scroll" reverseScroll={true}>
+                <CourseCard title="TOEFL" image="/course/Rectangle 356.svg" />
+                <CourseCard
+                  title="Desain Grafis"
+                  image="/course/Rectangle 356-1.svg"
+                />
+                <CourseCard
+                  title="Desain Grafis"
+                  image="/course/Rectangle 356-2.svg"
+                />
+                <CourseCard title="Piano" image="/course/Rectangle 356-3.svg" />
+                <CourseCard title="Vokal" image="/course/Rectangle 356-1.svg" />
+                <CourseCard title="Piano" image="/course/Rectangle 356-2.svg" />
+              </HorizontalScroll>
+            </div>
+          </div>
         </div>
       </div>
     </div>

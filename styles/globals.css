@@ -40,19 +40,14 @@ nav{
   color: #858585 !important;
 }
 
-.list-story::-webkit-scrollbar {
-  width: 0;  
-  height: 0;
-  background: transparent;  
-}
 
-.statistics, .leaderboard{
+.statistics, .leaderboard, .course{
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
   border-radius: 24px;
   padding: .5rem 1rem;
 }
 .statistics{
-  height: 50vh;
+  height: 295px;
 }
 .statistics h3{
   margin-top: 0.8rem;
@@ -108,16 +103,46 @@ nav{
   stroke: #006FFF;
 }
 
+.ranking{
+  height: 350px;
+  overflow-x: auto;
+}
+
+.ranking::-webkit-scrollbar {
+  width: 0;  
+  height: 0;
+  background: transparent;  
+}
+
 .container-rank{
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 60px;
   width: 100%;
-  background: linear-gradient(89.9deg, #FFCE00 42.44%, #FFEEA9 107.27%);
   border-radius: 12px;
   padding: 0 10px;
   flex-wrap: nowrap;
+}
+
+.rank1{
+  background: linear-gradient(89.9deg, #FFCE00 42.44%, #FFEEA9 107.27%);
+  margin: 0 0 10px 0;
+}
+
+.rank2{
+  background: linear-gradient(89.9deg, #D1D1C2 42.44%, #EFEFEF 107.27%);
+  margin: 0 0 10px 0;
+}
+
+.rank3{
+  background: linear-gradient(89.9deg, #EBA468 42.44%, #FDDDC2 107.27%);
+  margin: 0 0 10px 0;
+}
+
+.rank4{
+  background: #F9F9F9;
+  margin: 0 0 10px 0;
 }
 
 .position{
@@ -133,8 +158,194 @@ nav{
   align-items: center;
   justify-content: center;
 }
+.avatar{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: white;
+  margin: 0 10px;
+}
+
+.avatar img{
+  width: 100%;
+  height: 100%;
+}
+
+.name{
+  display: static;
+  display: -webkit-box;
+  max-width: 86px;
+  height: 36px;
+  margin: 0 5px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.point{
+  display: flex;
+  margin: 0 5px;
+}
+
+.point div{
+  border-radius: 9px;
+  padding: 2px 5px;
+  margin: 0 5px;
+  background: white;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: 0.5px;
+}
+
+.poin1{
+  color: #53BAC1;
+}
+
+.poin2{
+  color: #DB0038;;
+}
+
+.poin3{
+  color: #333333;;
+}
+
+.score{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: right;
+  letter-spacing: 0.5px;
+  color: #333333;
+  margin: 0 5px;
+}
+
+.course{
+  height: 240px;
+}
+
+.course h3{
+  margin-top: 0.8rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  color: #333333;
+}
+
+.container-course{
+  display: flex;
+  flex-wrap: nowrap;
+  height: min-content;
+  overflow-x: auto;
+}
+
+.course-card{
+  margin: 0 10px;
+  padding: 15px 15px;
+  min-width: 300px !important;
+  height: 170px !important;
+  border-radius: 24px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.top{
+  display: flex;
+  flex-direction: row;
+}
+
+.course-avatar{
+  width: 92px;
+  height: 92px;
+  padding-right: 10px;
+}
+
+.course-avatar img{
+  width: 100%;
+  height: 100%;
+}
+
+.course-info h5{
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: #333333;
+}
+
+.navigation-course{
+  cursor: pointer;
+}
+
+.price{
+  text-align: end;
+  text-decoration: line-through;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: right;
+  letter-spacing: 0.5px;
+  text-decoration-line: line-through;
+  color: #858585;
+  margin: 5px 0;
+}
+
+.start-date{
+  background: #FBE6EB;
+  border-radius: 9px;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #DB0038;
+  padding: 2px;
+}
+
+.discount{
+  font-weight: bold;
+font-size: 16px;
+line-height: 18px;
+text-align: right;
+letter-spacing: 0.5px;
+color: #53BAC1;
+}
+
+.course-vendor span{
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 13px;
+  letter-spacing: 0.5px;
+  color: #333333;
+}
+
+.course-preview span{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  color: #333333;
+}
 
 
+@media (max-width: 991.98px) { 
+  .name{
+    display: static;
+    display: -webkit-box;
+    min-width: 120px;
+    max-width: 200px;
+    height: 20px;
+    margin: 0 5px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+ }
 
 
 
