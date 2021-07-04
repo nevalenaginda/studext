@@ -36,9 +36,9 @@ export default function Home() {
                   <path
                     d="M1 10V10.75C1 11.3467 1.23705 11.919 1.65901 12.341C2.08097 12.7629 2.65326 13 3.25 13H10.75C11.3467 13 11.919 12.7629 12.341 12.341C12.7629 11.919 13 11.3467 13 10.75V10M10 7L7 10M7 10L4 7M7 10V1"
                     stroke="#008FFF"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
                 <span className="ms-1">Unduh.CSV</span>
