@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 a {
@@ -14,3 +15,127 @@ a {
 * {
   box-sizing: border-box;
 }
+
+nav{
+  height: 72px;
+}
+
+.radius20{
+  border-radius: 20px;
+}
+
+.radius24{
+  border-radius: 24px;
+}
+
+.radiusLeft20{
+  border-radius: 20px 0px 0px 20px !important;
+}
+
+.radiusRight20{
+  border-radius: 0px 20px 20px 0px !important;
+}
+
+.color2{
+  color: #858585 !important;
+}
+
+.list-story::-webkit-scrollbar {
+  width: 0;  
+  height: 0;
+  background: transparent;  
+}
+
+.statistics, .leaderboard{
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  padding: .5rem 1rem;
+}
+.statistics{
+  height: 50vh;
+}
+.statistics h3{
+  margin-top: 0.8rem;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  color: #333333;
+}
+.leaderboard{
+  background-image: url("../src//images//confetty.png");
+  background-repeat: repeat-x;
+}
+.leaderboard h3{
+  margin-top: 0.8rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  color: #333333;
+}
+.leaderboard p{
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  color: #333333;
+  margin-bottom: 5px;
+}
+.leaderboard>img{
+  position: absolute;
+  margin-top: -50px;
+  right: 12px;
+}
+.download{
+  width: 110px;
+  height: 20px;
+  padding: 0;
+  margin:0;
+  border: none;
+  background: none;
+}
+.download span{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: #008FFF;
+}
+.download:hover span, .download:hover path{
+  color: #006FFF;
+  stroke: #006FFF;
+}
+
+.container-rank{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  background: linear-gradient(89.9deg, #FFCE00 42.44%, #FFEEA9 107.27%);
+  border-radius: 12px;
+  padding: 0 10px;
+  flex-wrap: nowrap;
+}
+
+.position{
+  font-size: 14px;
+  color:  #333333;
+  font-weight: bold;
+  line-height: 10px;
+  background: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
